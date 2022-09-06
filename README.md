@@ -5,3 +5,10 @@
 
 ![Screenshot_2](https://user-images.githubusercontent.com/59150827/188647897-774778aa-447c-4234-b709-0256fa4ebb31.png)
 
+
+
+mvc tarafında yapılacak islemler,API den cekiplip gerekli actionlara yonlendiriliyor.
+
+
+
+
