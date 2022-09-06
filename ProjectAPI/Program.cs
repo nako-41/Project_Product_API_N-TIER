@@ -5,11 +5,10 @@ using DataAccessLayer.Concrete.Repositories;
 using DataAccessLayer.Context;
 using Microsoft.EntityFrameworkCore;
 
-
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
+
 builder.Services.AddDbContext<ProjeContext>(options =>
    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 

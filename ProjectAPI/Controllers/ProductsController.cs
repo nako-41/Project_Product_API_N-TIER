@@ -7,11 +7,11 @@ namespace ProjectAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductssController : ControllerBase
+    public class ProductsController : ControllerBase
     {
         private readonly IProductService _productManager;
 
-        public ProductssController(IProductService productManager)
+        public ProductsController(IProductService productManager)
         {
             _productManager = productManager;
         }
@@ -22,7 +22,7 @@ namespace ProjectAPI.Controllers
             return _productManager.GetList().ToList();
         }
 
-        // GET api/<ProductsController>/5
+        // GET api/<ProductsController>/1
         [HttpGet("{id}")]
         public ActionResult<Product> Get(int id)
         {
@@ -58,7 +58,7 @@ namespace ProjectAPI.Controllers
             return _productManager.Update(product);
         }
 
-        // DELETE api/<ProductsController>/5
+        // DELETE api/<ProductsController>/2
         [HttpDelete("{id}")]
         public ActionResult<bool> Delete(int id)
         {
